@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formsWrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: flex-end;
+
+    h3 {
+        width: 60%;
+        margin: 30px 0;
+        white-space: nowrap;
+    }
+}
+
+.zuliefererWrapper,
+.ansprechpartnerWrapper {
+    display: none;
+}
+
+.zuliefererWrapperVisible {
+    width: 30%;
+    margin: 0 60px 0 300px;
+
+    p {
+        margin-top: 30px;
+        font-size: 8px;
+    }
+}
+
+.ansprechpartnerWrapperVisible {
+    width: 40%;
+    margin: 120px 80px 0 10px;
+    border: 1px solid #cccccc;
+
+    h4 {
+        height: 20px;
+        margin: 0;
+        padding: 20px 0 20px 26px;
+        background: #cccccc;
+    }
+}
+
+.zuliefererWrapperVisible,
+.ansprechpartnerWrapperVisible {
+    display: block;
+}
+
+.zuliefererTextFieldWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.zuliefererCounter {
+    position: absolute;
+    margin-top: -33px;
+    left: 115px;
+}
+
+.ansprechpartnerTextFieldRow {
+    flex-direction: row;
+
+    legend {
+        padding-top: 10px;
+    }
+}
+
+.ansprechpartnerTextField {
+    margin-right: 20px;
+}
+
+@media (max-width: 959px) {
+    .formsWrapper {
+        flex-direction: column;
+        width: initial;
+        margin-top: 20px;
+
+        h3 {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .zuliefererWrapperVisible {
+        width: initial;
+        margin: 0 40px 0 40px;
+
+        h3 {
+            margin: 20px 0;
+        }
+    }
+
+    .ansprechpartnerWrapperVisible {
+        width: initial;
+        margin: 10px 40px 0 30px;
+
+        h4 {
+            height: 100%;
+            margin: 0;
+        }
+    }
+
+    .ansprechpartnerTextFieldRow {
+        flex-direction: row;
+        padding: 0 10px;
+
+        legend {
+            padding-top: 10px;
+        }
+    }
+}
+
